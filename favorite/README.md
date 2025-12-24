@@ -28,7 +28,7 @@
 
 在同一个数据库下创建名为`favorite`的表，表内结构如下，按图创建即可：
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h771lcytk8j30uv03zgnd.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h771lcytk8j30uv03zgnd.jpg)
 
 #### 3.1.1、适配他人机器人数据库
 
@@ -36,7 +36,7 @@
 
 如果你使用的是其他机器人，请确保你的用户表中记录了TG用户ID和Emby用户ID这两个字段，他们大概长这样
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h771phzvp9j30da02ddgo.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h771phzvp9j30da02ddgo.jpg)
 
 打开`/收藏通知/api_notify.py`，找到20行`idtochatid`这个子函数，修改22行`create_sqli = "SELECT 空1 FROM 空2 WHERE 空3 = "+'"'+ str(id)+'"'`，将空1替换为TG用户ID的字段名(chatid)，空2替换为用户表名(user)，空3替换为Emby用户ID的字段名(emby_userid)。
 
@@ -56,7 +56,7 @@
 
 容器启动后，输入`docker exec -it 容器ID bash`进入容器。
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h771ewl3q5j30ee01o0tl.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h771ewl3q5j30ee01o0tl.jpg)
 
 显示这样即进入容器成功，接下来开始搭建环境：
 
@@ -72,11 +72,11 @@ pip3 install pymysql
 
 没有任何报错即搭建完毕，进入Emby后台，在插件市场中安装`Scripter-X → Actions`插件，重启服务器，在后台左下角找到此插件的设置界面。
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h7724vgxhij31z40z3wny.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h7724vgxhij31z40z3wny.jpg)
 
 在右侧找到**onMedialtemAdded**和**onMedialtemAddedComplete**选项，展开，点击加号添加一条命令，再点右侧笔图标，编辑此条命令。
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h77279cxvhj31nj0hek82.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h77279cxvhj31nj0hek82.jpg)
 
 按上图进行设置，最后一行的触发条件是把上面这些属性拖下来，最后的**Episode**是拖个Text下来，双击编辑。
 
@@ -106,11 +106,11 @@ pip3 install pymysql
 
 没有任何报错即搭建完毕，进入Emby后台，在插件市场中安装`Scripter-X → Actions`插件，重启服务器，在后台左下角找到此插件的设置界面。
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h7724vgxhij31z40z3wny.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h7724vgxhij31z40z3wny.jpg)
 
 在右侧找到**onMedialtemAdded**和**onMedialtemAddedComplete**选项，展开，点击加号添加一条命令，再点右侧笔图标，编辑此条命令。
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h77279cxvhj31nj0hek82.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h77279cxvhj31nj0hek82.jpg)
 
 按上图进行设置，最后一行的触发条件是把上面这些属性拖下来，最后的**Episode**是拖个Text下来，双击编辑。
 
@@ -145,7 +145,7 @@ pip3 install flask
 
 URL一栏输入：`http://IP:12345/update`，勾选**User**，储存即可，测试会报错，正常。
 
-![](http://tva1.sinaimg.cn/large/007dA9Degy1h772qezp4ej316u0s7n0c.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h772qezp4ej316u0s7n0c.jpg)
 
 现在你可以去收藏一个电视剧，看看机器人是否会提示你收藏成功。若一切顺利，Ctrl+C结束前台运行，输入命令`nohup python3 /root/api_notify.py  > /root/api_notify.log 2>&1 &`后台运行。
 
