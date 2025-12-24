@@ -45,7 +45,7 @@ nohup python3 ExternalUrl.py  > ExternalUrl.log 2>&1 &
 
 此方案应适配所有官方/魔改客户端，不适配Fileball，影音宝等第三方客户端。
 
-![](https://raw.githubusercontent.com/MisakaFxxxk/MisakaF_Emby/main/media/007dA9Degy1h885ff0i6hj31z40z1npd.jpg)
+![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Degy1h885ff0i6hj31z40z1npd.jpg)
 
 ### 五、致谢
 
