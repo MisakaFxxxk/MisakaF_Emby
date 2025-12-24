@@ -83,7 +83,6 @@ rclone config
 复制红框内的字符串，如果无法选中，先鼠标右键-标记，然后就可以了：
 
 ![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Dely8h2ik653oifj30xz0hr0xj.jpg)
-
 回到VPS，粘贴你刚刚在自己电脑里复制的字符串，回车。
 
 ——————————————————————————————————————————————————
@@ -93,7 +92,6 @@ rclone config
 ![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Dely8h2ik82q182j30fm03774h.jpg)
 
 ![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Dely8h2ik903oqqj30j308oq3o.jpg)
-
 接下来一路回车，最后按【q】退出rclone配置即可。
 
 ##### rclone挂载谷歌云盘
@@ -115,7 +113,7 @@ rclone mount googledrive: /mnt/googledrive --allow-other --allow-non-empty --cac
 自己上网查找安装，教程太多不再赘述
 
 ```
-git clone https://github.com/MisakaFxxk/MisakaF_Emby.git && cd MisakaF_Emby/tvshows/anime && pip3 install -r requirements.txt
+git clone https://github.com/MisakaFxxxk/MisakaF_Emby.git && cd MisakaF_Emby/tvshows/anime && pip3 install -r requirements.txt
 ```
 
 
@@ -138,7 +136,7 @@ python3 -X utf8 /root/MisakaF_Emby/tvshows/anime/update.py "%F"
 
 ![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Dely8h2iktqgb0oj31ot0u0aby.jpg)
 
-首先，点击【新RSS订阅】，输入动漫订阅地址：https://bangumi.moe/rss/latest，或用其他你自己找的也行
+首先，点击【新RSS订阅】，输入动漫订阅地址：https://bangumi.moe/rss/latest ，或用其他你自己找的也行
 
 ![](https://github.com/MisakaFxxxk/MisakaF_Emby/raw/main/media/007dA9Dely8h2ikvdlgwyj31or0u0tau.jpg)
 
